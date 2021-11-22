@@ -1855,4 +1855,7 @@ a.text-primary:hover {
 	footer {
 		display: none;
 	}
+	.w-30 {
+		width: 30%;
+	}
 }
