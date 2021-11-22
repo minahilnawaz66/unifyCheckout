@@ -1795,6 +1795,10 @@ a.text-primary:hover {
 .g-brd-bottom {
 	border-bottom: solid 1px #ccc;
 }
+.logo-img {
+	width: 80%;
+	padding-top: 10px;
+}
 @media (max-width: 420px) {
 	.navbar {
 		overflow: hidden;
