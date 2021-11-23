@@ -230,7 +230,7 @@
 													<input class="form-control text-center g-font-size-13 rounded-0 g-pa-0" readonly type="text" id="inc" value="0" />
 													<div class="d-flex align-items-center g-width-30 g-brd-gray-light-v2 g-bg-white font-size-12 rounded-0 g-px-5 g-py-6">
 														<i class="mr-3 g-color-gray primary-hover fa fa-angle-up" onclick="buttonClick()"></i>
-														<i class="g-color-gray primary-hover fa fa-angle-down"></i>
+														<i class="g-color-gray primary-hover fa fa-angle-down" onclick="buttonClickdec()"></i>
 													</div>
 												</div>
 											</td>
@@ -260,7 +260,7 @@
 													<input class="form-control text-center g-font-size-13 rounded-0 g-pa-0" readonly type="text" id="inc2" value="0" />
 													<div class="d-flex align-items-center g-width-30 g-brd-gray-light-v2 g-bg-white font-size-12 rounded-0 g-px-5 g-py-6">
 														<i class="mr-3 g-color-gray primary-hover fa fa-angle-up" onclick="buttonClick2()"></i>
-														<i class="g-color-gray primary-hover fa fa-angle-down"></i>
+														<i class="g-color-gray primary-hover fa fa-angle-down" onclick="buttonClickdec2()"></i>
 													</div>
 												</div>
 											</td>
@@ -290,7 +290,7 @@
 													<input class="form-control text-center g-font-size-13 rounded-0 g-pa-0" readonly type="text" id="inc3" value="0" />
 													<div class="d-flex align-items-center g-width-30 g-brd-gray-light-v2 g-bg-white font-size-12 rounded-0 g-px-5 g-py-6">
 														<i class="mr-3 g-color-gray primary-hover fa fa-angle-up" onclick="buttonClick3()"></i>
-														<i class="g-color-gray primary-hover fa fa-angle-down"></i>
+														<i class="g-color-gray primary-hover fa fa-angle-down" onclick="buttonClickdec3()"></i>
 													</div>
 												</div>
 											</td>
@@ -793,13 +793,22 @@
 		<script>
 			var i = 0;
 			function buttonClick() {
-				document.getElementById("inc").value = ++i;
+				document.getElementById("inc").value = i++;
+			}
+			function buttonClickdec() {
+				document.getElementById("inc").value = i--;
 			}
 			function buttonClick2() {
-				document.getElementById("inc2").value = ++i;
+				document.getElementById("inc2").value = i++;
+			}
+			function buttonClickdec2() {
+				document.getElementById("inc2").value = i--;
 			}
 			function buttonClick3() {
-				document.getElementById("inc3").value = ++i;
+				document.getElementById("inc3").value = i++;
+			}
+			function buttonClickdec3() {
+				document.getElementById("inc3").value = i--;
 			}
 		</script>
 		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
