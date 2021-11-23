@@ -14,6 +14,7 @@ html {
 	-ms-scroll-behavior: smooth;
 	-webkit-scroll-behavior: smooth;
 }
+
 .body {
 	font-weight: 400;
 	font-size: 1rem;
@@ -1858,4 +1859,17 @@ a.text-primary:hover {
 	.w-30 {
 		width: 30%;
 	}
+}
+select {
+	height: 50px;
+	overflow-y: scroll;
+}
+.scroller {
+	height: 150px;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+}
+
+.color-primary {
+	color: #359e80;
 }
