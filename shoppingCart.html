@@ -227,10 +227,9 @@
 											<td class="g-color-gray-dark-v2 g-font-size-13 text-left">$ 87.00</td>
 											<td>
 												<div class="js-quantity input-group u-quantity-v1 g-width-80 g-brd-primary--focus">
-													<input class="js-result form-control text-center g-font-size-13 rounded-0 g-pa-0" type="text" value="1" readonly />
-
+													<input class="form-control text-center g-font-size-13 rounded-0 g-pa-0" readonly type="text" id="inc" value="0" />
 													<div class="d-flex align-items-center g-width-30 g-brd-gray-light-v2 g-bg-white font-size-12 rounded-0 g-px-5 g-py-6">
-														<i class="mr-3 g-color-gray primary-hover fa fa-angle-up"></i>
+														<i class="mr-3 g-color-gray primary-hover fa fa-angle-up" onclick="buttonClick()"></i>
 														<i class="g-color-gray primary-hover fa fa-angle-down"></i>
 													</div>
 												</div>
@@ -258,10 +257,9 @@
 											<td class="g-color-gray-dark-v2 g-font-size-13 text-left">$ 160.00</td>
 											<td>
 												<div class="input-group u-quantity-v1 g-width-80 g-brd-primary--focus">
-													<input class="form-control text-center g-font-size-13 rounded-0 g-pa-0" type="text" value="2" readonly />
-
+													<input class="form-control text-center g-font-size-13 rounded-0 g-pa-0" readonly type="text" id="inc2" value="0" />
 													<div class="d-flex align-items-center g-width-30 g-brd-gray-light-v2 g-bg-white font-size-12 rounded-0 g-px-5 g-py-6">
-														<i class="mr-3 g-color-gray primary-hover fa fa-angle-up"></i>
+														<i class="mr-3 g-color-gray primary-hover fa fa-angle-up" onclick="buttonClick2()"></i>
 														<i class="g-color-gray primary-hover fa fa-angle-down"></i>
 													</div>
 												</div>
@@ -289,10 +287,9 @@
 
 											<td>
 												<div class="input-group u-quantity-v1 g-width-80 g-brd-primary--focus">
-													<input class="form-control text-center g-font-size-13 rounded-0 g-pa-0" type="text" value="1" readonly />
-
+													<input class="form-control text-center g-font-size-13 rounded-0 g-pa-0" readonly type="text" id="inc3" value="0" />
 													<div class="d-flex align-items-center g-width-30 g-brd-gray-light-v2 g-bg-white font-size-12 rounded-0 g-px-5 g-py-6">
-														<i class="mr-3 g-color-gray primary-hover fa fa-angle-up"></i>
+														<i class="mr-3 g-color-gray primary-hover fa fa-angle-up" onclick="buttonClick3()"></i>
 														<i class="g-color-gray primary-hover fa fa-angle-down"></i>
 													</div>
 												</div>
@@ -793,8 +790,19 @@
 				</div>
 			</div>
 		</footer>
+		<script>
+			var i = 0;
+			function buttonClick() {
+				document.getElementById("inc").value = ++i;
+			}
+			function buttonClick2() {
+				document.getElementById("inc2").value = ++i;
+			}
+			function buttonClick3() {
+				document.getElementById("inc3").value = ++i;
+			}
+		</script>
 		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="src/js/modernizr.js"></script>
